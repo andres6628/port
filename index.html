@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">ANDRÉS</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Andrés Villacrés</h1>
+            <h2>Futuro ingeniero de Software</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/andres.villacres3"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/AnAndreslkf14"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/andres-villacres-a97635245"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/andres6628"><i class="fa-brands fa-github"></i></a>
+
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Andrés Villacrés.</span> 
+                Tengo 25 años y estoy culminando mis estudios de ingeniería en software
+
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12/12/1997
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +593 995553604
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            andreslkf14@gamil.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            El recreo Ambato - Ecuador
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="docs/Curriculum Villacres.pdf" download="" style="color: white; text-decoration: none !important;">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Illustrador</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Secundaria</h4>
+                        <span class="casa">Colegio Bolívar</span>
+                        <span class="fecha">2009 - 2015</span>
+                        <p>
+                            Estudios secundarios realizados en la unidad educativa Bolívar con título de BGU.
+
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Estudios Universitarios</h4>
+                        <span class="casa">Universidad Técnica de Ambato</span>
+                        <span class="fecha">2019 - 2023</span>
+                        <p>
+                            UTA es una universidad con gran prestigio a nivel nacional. La carrera cursada es ingeniería en Software.
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Adicionales</h4>
+                        <span class="casa">Cursos</span>
+                        <span class="fecha">2020 - 2023</span>
+                        <p>
+                            - Curso avanzado en Angular
+                            - Curso de python
+                            - Curso de Esxel
+                            - Curso avanzado de Spring
+                            - Curso de diseño gráfico, editorial, web, video, foto y 3D
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Frontend y Backend</h4>
+                        <span class="casa">DEADV</span>
+                        <span class="fecha">2021 - 2022</span>
+                        <p>
+                            La dirección de educación a distancia y virtual me abrió las puertas para trabajar en un proyecto en el cual se
+                            trabajó tanto el backend como el frontend por un año aproximadamente.
+                            Herramientas utilizadas:
+                            - Php 
+                            - Mysql 
+                            - TypeScript 
+                            - JavaScript 
+                            - Html 
+                            - Css 
+                            - Angular
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Frontend y Backend</h4>
+                        <span class="casa">Mastergraphics</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>
+                            Mastergraphics es una imprenta el cual me permitió trabajar por 2 años para la gestión y automatización de procesos que conlleva una imprenta. 
+                            Herramientas utilizadas:
+                            - MySql 
+                            - JavaScript 
+                            - Html 
+                            - Css 
+                            - Angular
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Prensista</h4>
+                        <span class="casa">Mastergraphics</span>
+                        <span class="fecha">2014 - 2019</span>
+                        <p>
+                            Por el transcurso de 5 años, la imprenta Mastergraphics me permitió trabajar como prensista, con el manejo de máquinas offset y tipográficas.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/nft.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Web 3.0</h3>
+                        <p>Creación de certificados NFTs</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/tickets.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Gestor de turnos</h3>
+                        <p>Proyecto en Angular y Php para gestionar tusnor mediante tickets</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/comida.png" alt="">
+                    <div class="overlay">
+                        <h3>Reserva de comida</h3>
+                        <p>Reserva de comida mediante un aplicación móvil</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/imprenta.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Gestor de imprenta</h3>
+                        <p>Automatización de procesos de una imprenta.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyeccion.png" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Próximamente...</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/proyeccion.png" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Próximamente...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="6" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ambato2.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Nicaragua 159, San Rafael Mza
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 2384 - 4343443 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cw@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/andres.villacres3"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/AnAndreslkf14"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/andres-villacres-a97635245"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/andres6628"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
