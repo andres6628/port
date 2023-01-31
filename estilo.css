@@ -588,11 +588,12 @@ html{
 }
 .contacto .col .info{
     position: absolute;
-    top: 40%;
-    background-color: #82CD47;
-    padding: 20px;
-    max-width: 350px;
-    left: 50%;
+    top: 60%;
+    background-color: white;
+    color: #82CD47;
+    padding: 5px;
+    max-width: 500px;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 .contacto .col .info ul{
