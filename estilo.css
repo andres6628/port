@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin Sans&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 *{
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family: 'Josefin Sans';
     margin: 0;
     padding: 0;
 }
@@ -11,7 +13,7 @@ html{
 }
 /* MENU */
 .contenedor-header{
-    background: #1e2326;
+    background: whitesmoke;
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,7 +29,7 @@ html{
     padding: 15px 20px;
 }
 .contenedor-header header .logo a{
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     font-size: 36px;
     color: #82CD47;
     text-decoration: none;
@@ -38,7 +40,7 @@ html{
 }
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: black;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -57,17 +59,18 @@ html{
 }
 /* SECCION I N I C I O */
 .inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(img/bcg.jpg);
+    /*background: linear-gradient(to top, rgba(216, 216, 216), rgba(216, 216, 216)),*/
+    /*background:  url(img/25101.jpg);*/
+    background-color: whitesmoke;
     background-size: cover;
     height: 100vh;
-    color: #fff;
+    color: black;
     display: flex;
     align-items: center;
 }
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e2326;
+    background: linear-gradient(to top, rgba(237, 237, 237), rgba(237, 237, 237));
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -83,18 +86,18 @@ html{
 }
 .inicio .contenido-banner h1{
     margin-top: 40px;
-    font-size: 42px;
-    font-family: 'Righteous';
+    font-size: 45px;
+    font-family: 'Josefin Sans';
 }
 .inicio .contenido-banner h2{
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
 }
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: black;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid black;
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -107,23 +110,25 @@ html{
     background-color: #82CD47;
 }
 .sobremi{
-    background-color: #1e2326;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 50px 20px;
 }
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    border-color: black;
+    border-radius: 20px;
 }
 .sobremi h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     text-align: center;
     padding: 20px 0;
 
 }
 .sobremi .contenido-seccion p{
-    font: 18px;
+    font: 23px;
     line-height: 22px;
     margin-bottom: 20px;
 }
@@ -139,8 +144,8 @@ html{
     width: 50%;
 }
 .sobremi .fila .col h3{
-    font-size: 28px;
-    font-family: 'Righteous';
+    font-size: 30px;
+    font-family: 'Josefin Sans';
     margin-bottom: 25px;
 }
 .sobremi .fila .col ul{
@@ -167,7 +172,8 @@ html{
 .sobremi .fila .col .contenedor-intereses .interes{
     width: 100px;
     height: 100px;
-    background-color: #252A2E;
+    background-color: #D8D8D8;
+    border-color: black;
     border-radius: 10px;
     margin: 0 15px 15px 0;
     display: flex;
@@ -210,8 +216,8 @@ html{
 }
 /* SECCION S K I L L S */
 .skills{
-    background-color: #252A2E;
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
@@ -220,7 +226,7 @@ html{
 }
 .skills h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     text-align: center;
     padding: 20px 0;
 
@@ -234,7 +240,7 @@ html{
 }
 .skills .fila .col h3{
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     margin-bottom: 25px;
 }
 .skills .skill > span{
@@ -358,10 +364,11 @@ html{
     0%{width: 0%;}
     100%{width: 94%;}
 }
+
 /* SECCION CURRICULUM */
 .curriculum{
-    background-color: #1e2326;
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     padding: 50px 20px;
 }
 .curriculum .contenido-seccion{
@@ -370,7 +377,7 @@ html{
 }
 .curriculum h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     text-align: center;
     padding: 20px 0;
 
@@ -385,19 +392,19 @@ html{
 }
 .curriculum .fila .col h3{
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
+    border-right: 2px solid #D8D8D8;
 }
 .curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
+    border-left: 2px solid #D8D8D8;
 }
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252A2E;
+    background-color: #D8D8D8;
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -466,8 +473,8 @@ html{
 }
 /* SECCION PORTFOLIO */
 .portfolio{
-    background-color: #252A2E;
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     padding: 50px 20px;
 }
 .portfolio .contenido-seccion{
@@ -476,7 +483,7 @@ html{
 }
 .portfolio h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     text-align: center;
     padding: 20px 0;
 }
@@ -525,8 +532,8 @@ html{
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(img/contact_bg.png);
-    background-color: #1e2326;
-    color: #fff;
+    background-color: white;
+    color: black;
     padding: 50px 0;
 }
 .contacto .contenido-seccion{
@@ -535,7 +542,7 @@ html{
 }
 .contacto h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Josefin Sans';
     text-align: center;
     padding: 20px 0;
 }
@@ -553,20 +560,20 @@ html{
     padding: 18px;
     border: none;
     margin-bottom: 20px;
-    background-color: #252A2E;
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     font-size: 18px;
 }
 .contacto button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid black;
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: #82CD47;
     position: relative;
     z-index: 10;
 }
